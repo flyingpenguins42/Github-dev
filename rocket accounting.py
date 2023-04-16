@@ -19,7 +19,8 @@ def tab(n):
     data.append(n)
     head = ["Actifs","somme", "Passifs","somme"]
     print(tabulate(data, headers=head, tablefmt="grid"))
-    # n=[]
+    # L=[n]
+    print(type(n))
     # actif.append(n[2])
     # passif.append(n[4])
 
