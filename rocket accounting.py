@@ -23,7 +23,7 @@ def tab(e):
         #compléter avec autres noms Passifs
     
     #ajouter fonction pour réaficher tableau dans le bon ordre à chaque fois
-    print (order)
+    
     
     head = ["Actifs","Valeur", "Passifs","Valeur"] #le titre
     print(tabulate(data, headers=head, tablefmt="grid")) #afficher le tableau
