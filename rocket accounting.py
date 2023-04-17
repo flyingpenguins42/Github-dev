@@ -9,13 +9,13 @@ passif=[] #les listes annexes pour sommer indépendement les actifs et les passi
 # ATTENTION: écrire dans console sous forme : 
     # tab(["mobilier",2000,"fournisseurs",2000])
     # ou tab([1010,2000,2000,2000])
-n=0
+
 def tab(e):
     data.append(e) #on ajoute les éléments à la liste data
     
     if e[0] == 1000:
         e[0]="caisse"
-        # order.append()
+        # order.append(1)
         #compléter avec autres noms Actifs
 
     if e[2] ==2000:
@@ -23,9 +23,7 @@ def tab(e):
         #compléter avec autres noms Passifs
     
     #ajouter fonction pour réaficher tableau dans le bon ordre à chaque fois
-    print ("order=",order)
-    n+=1
-    print(n)
+    print (order)
     
     head = ["Actifs","Valeur", "Passifs","Valeur"] #le titre
     print(tabulate(data, headers=head, tablefmt="grid")) #afficher le tableau
