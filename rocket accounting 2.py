@@ -1,4 +1,5 @@
 from tabulate import tabulate
+import numpy as np
 
 dataA = [] #la liste qui va contenir les données du tableau
 dataP = []
@@ -46,4 +47,7 @@ def tab(a,p):
         print("oups,vous êtes en faillite..")
     elif SumA == SumP:
         print("les valeurs sont justes")
+    #-->possibilité d'enlever ces lignes car fausses en comptabilité
     
+    Fp = np.absolute(SumA-SumP)
+    print("Fonds propres=",Fp) #calcul et affichage des fonds propres (=capital)
